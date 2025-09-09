@@ -24,25 +24,31 @@ class _body extends StatelessWidget {
       ),
       body:  SizedBox(
         width: double.infinity,
-        child: 
-          Center(
-              child: Row(
+        child: SizedBox(
+          width: double.infinity,
+          child:Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: const [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  _buttons(enabled: true),
-                  _buttons(enabled: false),
+                  _Buttons(enabled: true,),
+                  SizedBox(width: 10,),
+                  _Buttons(enabled: false,),
                 ],
-              ),
-            ),
-        
+              )
+            ],
+          ),
+        )
       ),
     );
   }
 }
 
-class _buttons extends StatelessWidget {
+class _Buttons extends StatelessWidget {
   final bool enabled;
 
-  const _buttons({
+  const _Buttons({
     super.key,
     this.enabled = true,
   });

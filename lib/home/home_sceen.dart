@@ -37,19 +37,37 @@ class _DetalleListadoOpciones extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     return ListView.builder(
       itemCount: tipoWidgets.length,
       itemBuilder: (context, index) {
         final item = tipoWidgets[index];
-        return ListTile(
-          leading: Icon(item.icon),
-          trailing: Icon( Icons.arrow_forward_ios_outlined),
-          title: Text(item.title),
-          subtitle: Text(item.description),
-          onTap: () {
-            context.push(item.link);
-          },
-        );
+        return _OptionTile(item: item);
+      },
+    );
+  }
+}
+
+class _OptionTile extends StatelessWidget {
+  const _OptionTile({
+    super.key,
+    required this.item,
+  });
+
+  final MenuItem item;
+  
+  @override
+  Widget build(BuildContext context) {
+
+    final ColorScheme colors = Theme.of(context).colorScheme;
+
+    return ListTile(
+      leading: Icon(item.icon, color: colors.primary),
+      trailing: Icon( Icons.arrow_forward_ios_outlined),
+      title: Text(item.title),
+      subtitle: Text(item.description),
+      onTap: () {
+        context.push(item.link);
       },
     );
   }

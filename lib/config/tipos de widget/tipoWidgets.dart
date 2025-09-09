@@ -28,4 +28,10 @@ List<MenuItem> tipoWidgets = [
     icon: Icons.card_membership_outlined,
     link: '/cards',
   ),
+  MenuItem(
+    title: 'Infinite Scroll',
+    description: 'Muestra información en un formato de desplazamiento infinito.',
+    icon: Icons.list_alt_outlined,
+    link: '/infinite_scroll',
+  ),
 ];
