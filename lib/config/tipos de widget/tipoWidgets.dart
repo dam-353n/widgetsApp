@@ -41,24 +41,26 @@ List<MenuItem> tipoWidgets = [
     link: '/snackbars',
   ),
   MenuItem(
-    title: 'Card',
+    title: 'Animated',
+    description: 'Muestra información en un formato de animación.',
+    icon: Icons.animation,
+    link: '/animated',
+  ),
+  MenuItem(
+    title: 'On boarding',
+    description: 'Muestra información en un formato de on boarding.',
+    icon: Icons.card_giftcard_rounded,
+    link: '/onboarding',
+  ),
+  MenuItem(
+    title: 'ui Controls',
     description: 'Muestra información en un formato de tarjeta.',
-    icon: Icons.card_membership_outlined,
-    link: '/cards',
+    icon: Icons.pest_control_rodent_outlined,
+    link: '/ui_controls',
   ),MenuItem(
-    title: 'Card',
-    description: 'Muestra información en un formato de tarjeta.',
-    icon: Icons.card_membership_outlined,
-    link: '/cards',
-  ),MenuItem(
-    title: 'Card',
-    description: 'Muestra información en un formato de tarjeta.',
-    icon: Icons.card_membership_outlined,
-    link: '/cards',
-  ),MenuItem(
-    title: 'Card',
-    description: 'Muestra información en un formato de tarjeta.',
-    icon: Icons.card_membership_outlined,
-    link: '/cards',
+    title: 'progress',
+    description: 'Muestra información en un formato de controles de progreso',
+    icon: Icons.nordic_walking,
+    link: '/progress',
   ),
 ];
