@@ -34,4 +34,31 @@ List<MenuItem> tipoWidgets = [
     icon: Icons.list_alt_outlined,
     link: '/infinite_scroll',
   ),
+  MenuItem(
+    title: 'Snackbar',
+    description: 'Muestra información en un formato de snackbar.',
+    icon: Icons.smart_display,
+    link: '/snackbars',
+  ),
+  MenuItem(
+    title: 'Card',
+    description: 'Muestra información en un formato de tarjeta.',
+    icon: Icons.card_membership_outlined,
+    link: '/cards',
+  ),MenuItem(
+    title: 'Card',
+    description: 'Muestra información en un formato de tarjeta.',
+    icon: Icons.card_membership_outlined,
+    link: '/cards',
+  ),MenuItem(
+    title: 'Card',
+    description: 'Muestra información en un formato de tarjeta.',
+    icon: Icons.card_membership_outlined,
+    link: '/cards',
+  ),MenuItem(
+    title: 'Card',
+    description: 'Muestra información en un formato de tarjeta.',
+    icon: Icons.card_membership_outlined,
+    link: '/cards',
+  ),
 ];
