@@ -12,9 +12,7 @@ class ButtonsScreen extends StatelessWidget {
 }
 
 class _body extends StatelessWidget {
-  const _body({
-    super.key,
-  });
+  const _body();
 
   @override
   Widget build(BuildContext context) {
@@ -49,7 +47,6 @@ class _Buttons extends StatelessWidget {
   final bool enabled;
 
   const _Buttons({
-    super.key,
     this.enabled = true,
   });
   

@@ -7,15 +7,11 @@ class ProgressScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return _body();
+    return _Body();
   }
 }
 
-class _body extends StatelessWidget {
-  const _body({
-    super.key,
-  });
-
+class _Body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,7 +29,7 @@ class _body extends StatelessWidget {
 
             SizedBox(height: 20),
 
-            _progressIndicator()
+            _ProgressIndicator()
           ],
         ),
       ),
@@ -41,10 +37,8 @@ class _body extends StatelessWidget {
   }
 }
 
-class _progressIndicator extends StatelessWidget {
-  const _progressIndicator({
-    super.key,
-  });
+class _ProgressIndicator extends StatelessWidget {
+  const _ProgressIndicator();
 
   @override
   Widget build(BuildContext context) {

@@ -18,9 +18,6 @@ class HomeScreen extends StatelessWidget {
 }
 
 class _ListadoOpciones extends StatelessWidget {
-  const _ListadoOpciones({
-    super.key,
-  });
 
   @override
   Widget build(BuildContext context) {
@@ -31,10 +28,7 @@ class _ListadoOpciones extends StatelessWidget {
 }
 
 class _DetalleListadoOpciones extends StatelessWidget {
-  const _DetalleListadoOpciones({
-    super.key,
-  });
-
+  const _DetalleListadoOpciones();
   @override
   Widget build(BuildContext context) {
 
@@ -50,7 +44,6 @@ class _DetalleListadoOpciones extends StatelessWidget {
 
 class _OptionTile extends StatelessWidget {
   const _OptionTile({
-    super.key,
     required this.item,
   });
 

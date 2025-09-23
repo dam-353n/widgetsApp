@@ -46,9 +46,7 @@ class CardScreen extends StatelessWidget {
 }
 
 class _CardsBody extends StatelessWidget {
-  const _CardsBody({
-    super.key,
-  });
+  const _CardsBody();
 
   @override
   Widget build(BuildContext context) {
@@ -77,7 +75,6 @@ class _CardsBody extends StatelessWidget {
 
 class _CardsType1 extends StatelessWidget {
   const _CardsType1({
-    super.key,
     required this.card,
   });
 
@@ -99,7 +96,6 @@ class _CardsType1 extends StatelessWidget {
 
 class _CardsType2 extends StatelessWidget {
   const _CardsType2({
-    super.key,
     required this.card,
   });
 
@@ -126,7 +122,6 @@ class _CardsType2 extends StatelessWidget {
 
 class _CardsType3 extends StatelessWidget {
   const _CardsType3({
-    super.key,
     required this.card,
   });
 

@@ -6,14 +6,11 @@ class SnackbarScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return _body();
+    return _Body();
   }
 }
 
-class _body extends StatelessWidget {
-  const _body({
-    super.key,
-  });
+class _Body extends StatelessWidget {
 
     void showCustomSnackbar( BuildContext context ) {
 

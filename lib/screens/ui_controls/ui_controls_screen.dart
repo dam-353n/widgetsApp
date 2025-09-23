@@ -11,26 +11,23 @@ class UicontrolsScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('UI Controls'),
       ),
-      body: _body(),
+      body: _Body(),
     );
   }
 }
 
 enum LanguageProgramming { dart, kotlin, swift, javascript }
 
-class _body extends StatefulWidget {
-  const _body({
-    super.key,
-  });
+class _Body extends StatefulWidget {
 
   @override
-  State<_body> createState() => _bodyState();
+  State<_Body> createState() => _BodyState();
 }
 
-class _bodyState extends State<_body> {
+class _BodyState extends State<_Body> {
 
   bool isActive = false;
-  bool? isChecked = null;
+  bool? isChecked;
   LanguageProgramming selectedLanguage = LanguageProgramming.dart;
 
   @override
