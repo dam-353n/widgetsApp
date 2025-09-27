@@ -1,4 +1,5 @@
 import 'package:all_widgets/config/tipos%20de%20widget/tipoWidgets.dart';
+import 'package:all_widgets/widgets/drawer_menu.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -8,11 +9,16 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    final scaffoldKey = GlobalKey<ScaffoldState>();
+    
     return Scaffold(
+      key: scaffoldKey,
       appBar: AppBar(
         title: const Text('All Widgets'),
       ),
       body: _ListadoOpciones(),
+      drawer: SideMenu( scaffoldKey: scaffoldKey )
     );
   }
 }

@@ -62,5 +62,10 @@ List<MenuItem> tipoWidgets = [
     description: 'Muestra información en un formato de controles de progreso',
     icon: Icons.nordic_walking,
     link: '/progress',
+  ),MenuItem(
+    title: 'Cambiar tema',
+    description: 'Cambiar tema de la aplicación',
+    icon: Icons.color_lens_outlined,
+    link: '/theme-changer',
   ),
 ];

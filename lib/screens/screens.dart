@@ -7,3 +7,4 @@ export 'package:all_widgets/screens/onboarding/onboarding_screen.dart';
 export 'package:all_widgets/screens/progress/progress_screen.dart';
 export 'package:all_widgets/screens/snackbars/snackbar_screen.dart';
 export 'package:all_widgets/screens/ui_controls/ui_controls_screen.dart';
+export 'package:all_widgets/screens/theme_changer/theme_changer_screen.dart';

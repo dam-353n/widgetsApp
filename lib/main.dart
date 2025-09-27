@@ -1,20 +1,31 @@
+import 'package:all_widgets/config/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:all_widgets/config/router/app_router.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:all_widgets/providers/presentation/theme_provider.dart';
+
 void main() {
-  runApp(const MainApp());
+  runApp(
+    const ProviderScope(
+      child: MainApp()
+    )
+  );
 }
 
-class MainApp extends StatelessWidget {
+class MainApp extends ConsumerWidget {
   const MainApp({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, ref) {
+
+    final AppTheme appTheme = ref.watch( themeNotifierProvider );
+
+
     return MaterialApp.router(
-      theme: ThemeData(
-        useMaterial3: true,
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-      ),
-      routerConfig: appRouter
+       title: 'Flutter Widgets',
+      routerConfig: appRouter,
+      theme: appTheme.getTheme(),
+      
     );
   }
 }
